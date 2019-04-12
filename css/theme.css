@@ -25,9 +25,15 @@
   letter-spacing: 2px;
 }
 
-.feature-item img {
+.project-item img {
   width: 100%;
   max-width: 250px;
+  margin: 0px auto;
+}
+
+.feature-item img {
+  width: 100%;
+  max-width: 100px;
   margin: 0px auto;
 }
 
