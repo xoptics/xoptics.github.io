@@ -1,0 +1,162 @@
+extends ../../layout
+
+block title
+  title AI For Healthcare Bootcamp 
+
+block description
+  meta(name='description', content='The AI for Healthcare Bootcamp provides Stanford students an opportunity to do cutting-edge research at the intersection of AI and healthcare. Over two quarters, students receive training from PhD students and faculty in the medical school to work on high-impact research problems in small interdisciplinary teams.')
+
+block extrascripts
+include ../../includes/profile
+
+block content
+  section#header
+    .container
+      .row
+        .col-lg-9
+          img#aihc_headline(src="/programs/aihc-bootcamp.svg")
+  section.gray
+    .container
+      .row
+        .col-sm-8
+          h3 The AI for Healthcare Bootcamp provides Stanford students an opportunity to do cutting-edge research at the intersection of AI and healthcare. Over two quarters, students receive training from PhD students and faculty in the medical school to work on high-impact research problems in small interdisciplinary teams.
+          p 
+            | Projects out of the bootcamp have included work in (1) radiology on automated diagnosis of diseases from x-rays, ultrasound, CT and MR, (2) pathology on automated detection of rare tumor subtypes and on time-consuming pathology tasks, (3) public health on prediction of patient costs and heterogeneous treatment effect estimation, and (4) mental health on prediction of treatment outcomes in depression.  
+          a.btn.btn-lg.btn-default(href="https://docs.google.com/forms/d/e/1FAIpQLSfUlC1KRXZQxtodDQz2FMDaEihiBG7Tioj0PpNFSVnEWq579g/viewform?usp=sf_link") Apply Now
+        .col-sm-4
+          img(src="/programs/aihc-bootcamp-fall2018/bootcamp_cover_img.png")
+  section
+    .container
+      .row
+        .col-sm-4
+          h3 Teaching Team
+          +dp('Pranav Rajpurkar', 'phd', false, true)
+          +dp('Anand Avati', 'phd', false, true)
+          +dp('Jeremy Irvin', 'ms', false, true)
+          +dp('Sharon Zhou', 'phd', false, true)
+          +dp('Andrew Ng', 'prof', false, true)
+          +dp('Nigam Shah', 'prof', false, true)
+          +dp('Matt Lungren', 'prof', false, true)
+          +dp('Curt Langlotz', 'prof', false, true)
+          +dp('Jeanne Shen', 'prof', false, true)
+          +dp('Sanjay Basu', 'prof', false, true)
+          +dp('Bhavik Patel', 'prof', false, true)
+          +dp('Kristen Yeom', 'prof', false, true)
+          +dp('Leanne Williams', 'prof', false, true)
+        .col-sm-8
+          .applications
+            h2 Applications
+            p Students with a background in artificial intelligence, software engineering or medicine are encouraged to apply. The applications for the spring+summer bootcamp are now open.
+            ul
+              li Early Applications due Mar 1st, 2019 at 11:59p PST.
+              li Regular Applications due Apr 1st, 2019 at 11:59p PST.
+              li Late Applications due Apr 7th, 2019 at 11:59p PST. Apply early to give yourself enough time to prepare for the interview.
+              li Rolling interviews and selections until Apr 8th, 2019.
+              li Bootcamp starts Apr 8th, 2019. Students can choose to pursue their second quarter of the bootcamp over the summer or over the fall.
+            h3 AI Specialization
+            p This role is suited for students who have taken machine learning and software engineering courses. Students will be able to apply and sharpen these skills, developing machine learning solutions to challenging problems with the mentorship of CS PhD students and in collaboration with medical school faculty. Students have the opportunity to take a deep dive into healthcare and co-author a research paper. We expect students to have:
+            ul
+              li Taken machine learning courses (CS229/CS230/CS224N/CS231N or equivalent).
+              li Proficiency in software engineering (CS107 or equivalent), and have done Python programming.
+              li The bootcamp as their primary academic engagement (20-30 hours per week in lab) outside of 1 or 2 courses. We encourage students to sign up for research credits (CS 199, CS 399 etc).
+            h3 Medicine Specialization
+            p  This role is suited for students in the medical school. Students will work to define the focus of projects by exploring previous work and clinical utility. Students have the opportunity to work closely with the medical school faculty, take a deep dive into AI, and co-author a research paper. We expect students to:
+            ul
+              li Have medical knowledge / clinical experience (candidates have taken step 1 and/or completed at least some clinical rotations).
+              li Know deep learning and machine learning at a conceptual level.
+              li Dedicate 10-20 hours per week and attend 2 research meetings per week. Students can sign up for research credits (MED 199, MED 399 etc).
+            h3 Deployment Specialization
+            p AI projects are not complete before their tangible impact is demonstrated in the real world. This is why usable and robust deployment is a key element of our research projects.
+            p This role is suited for students who have taken human computer interaction and software development courses. Students will be able to apply and sharpen these skills, developing solutions to challenging problems at the intersection of AI and healthcare with the mentorship of CS PhD students, medical school faculty and software industry experts. Students have the opportunity to take a deep dive into healthcare and co-author a research paper. We expect students to have:
+            ul
+              li Proficiency in Python, Linux, Cloud Computing and JavaScript
+              li Have taken one or more of CS140, CS142, CS147, CS 193A, CS194H, CS210, or CS247
+              li The bootcamp as their primary academic engagement (20-30 hours per week in lab) outside of 1 or 2 courses. We encourage students to sign up for research credits (CS 199, CS 399 etc).
+  section.gray
+    .container
+      .row
+        .col-sm-4
+          h3 Past Bootcamp Projects
+          ul.list-unstyled
+            li
+              a.btn(href="/competitions/chexpert") CheXpert
+            li
+              a.btn(href="/projects/chexnext") CheXNeXt
+            li
+              a.btn(href="https://xray4all.com") XRay4All
+            li
+              a.btn(href="/projects/mrnet") MRNet
+            li
+              a.btn(href="/projects/chexnet") CheXNet
+            li
+              a.btn(href="/projects/mura") MURA
+        .col-sm-8
+          .row
+            .col-sm-12
+              h2 Past Bootcamp Cohorts
+              .cohort.clearfix
+                h3 Winter 2018-2019
+                //- Alphabetical order
+                +dp('Anuj Pareek', 'md')
+                +dp('Chris Wang', 'bs')
+                +dp('Jingbo Yang', 'bs')
+                +dp('Mark Sabini', 'bs')
+                +dp('Minh Phu', 'bs')
+                +dp('Nathan Dass', 'ms')
+              .cohort.clearfix
+                h3 Fall 2018-2019
+                +dp('Alex Wang', 'bs')
+                +dp('Amirhossein Kiani', 'ms')
+                +dp('Amit Schechter', 'bs')
+                +dp('Andrew Kondrich', 'bs')
+                +dp('Bora Uyumazturk', 'bs')
+                +dp('Chloe O\'Connell', 'md')
+                +dp('Jason Li', 'bs')
+                +dp('Nishit Asnani', 'ms')
+                +dp('Rebecca Gao', 'md')
+                +dp('Soumya Patro', 'ms')
+              .cohort.clearfix
+                h3 Spring 2017-2018
+                +dp('Behzad Haghgoo', 'bs')
+                +dp('Ben Cohen-Wang', 'bs')
+                +dp('Chris Chute', 'ms')
+                +dp('Joe Lou', 'bs')
+                +dp('Kelly Shen', 'ms')
+                +dp('Meng Zhang', 'ms')
+                +dp('Michael Ko', 'bs')
+                +dp('Nidhi Manoj', 'bs')
+                +dp('Philip Hwang', 'bs')
+                +dp('Robin Cheong', 'bs')
+                +dp('Silviana Ciurea Ilcus', 'ms')
+                +dp('Yifan Yu', 'ms')
+              .cohort.clearfix
+                h3 Winter 2017-2018
+                +dp('Allison Park', 'ms')
+                +dp('Andrew Huang', 'bs')
+                +dp('Atli Kosson', 'ms')
+                +dp('Chris Lin', 'ms')
+                +dp('Erik Jones', 'bs')
+                +dp('Henrik Marklund', 'ms')
+                +dp('Jessica Wetstone', 'ms')
+                +dp('Matthew Sun', 'bs')
+                +dp('Michael Bereket', 'bs')
+                +dp('Nicholas Bien', 'bs')
+                +dp('Norah Borus', 'bs')
+                +dp('Shubhang Desai', 'bs')
+                +dp('Suvadip Paul', 'ms')
+                +dp('Thao Nguyen', 'bs')
+                +dp('Tanay Kothari', 'bs')
+              .cohort.clearfix
+                h3 Fall 2017-2018
+                +dp('Aarti Bagul', 'ms')
+                +dp('Brandon Yang', 'bs')
+                +dp('Daisy Ding', 'ms')
+                +dp('Hershel Mehta', 'ms')
+                +dp('Kaylie Zhu', 'bs')
+                +dp('Tony Duan', 'ms')
+  section.bg-primary
+    .container
+      .row
+        .col-md-8.col-md-offset-4
+          h2 We invite you to join the AI revolution in healthcare
+          a.btn.btn-lg.btn-default(href="https://docs.google.com/forms/d/e/1FAIpQLSfUlC1KRXZQxtodDQz2FMDaEihiBG7Tioj0PpNFSVnEWq579g/viewform?usp=sf_link") Apply Now
